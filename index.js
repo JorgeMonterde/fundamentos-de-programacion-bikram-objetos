@@ -34,25 +34,31 @@ let Perro = {
 
 
 
-let Portatil = {
-    modelo: "el que sea",
-};
+let marcaPortatil = Portatil.marca;
+
+let marcaPortatil2 = Portatil["marca"];
+
+let grupos = Concierto.grupos
+
+// let RGB = Led["rojo"]
+// let RGB = Led["verde"]
+// let RGB = Led["azul"]
+
+
 Portatil.modelo = "P345";
 
+Concierto.cartelera = "Guns N' Roses";
 
-let Concierto = {
-    cartelera: "Guns N' Roses",
-};
-Concierto.fecha = "new Date() 2023-05-02";
+Concierto.fecha = new Date();
 
-let Impresora = {};
-let objetoConPropiedades = {
-    nombreArchivo: "Mi tesis",
-    copias: 3,
-    numPaginas: 12
+let objeto = {
+    nombreArchivo: "",
+    copias: "",
+    numPaginas: "",
 }
-Impresora.imprimiendo = objetoConPropiedades;
+Impresora.imprimiendo = objeto;
 console.log(Impresora.imprimiendo);
+
 Impresora.tinta = {
     rojo: 30,
     verde: 45,
@@ -66,10 +72,10 @@ let Noticia = {
     cuerpo: ""
 }
 
-let persona = {
-    nombre: "Juan",
-    apellidos: "Lopez Rodriguez",
-    edad: 38
+let Persona = {
+    nombre:"",
+    apellidos:"",
+    edad:"",
 }
 
 let Avion = {
@@ -79,9 +85,7 @@ let Avion = {
     aterrizar: function() {console.log('aterrizando')}
 }
 
-let Paquete = {
-    "array contenido": ["Libro1","Libro2","Libro3"]
-}
+let Paquete = {contenido:[]}
 
 let Pais = {
     numHabitantes: 47000000,
@@ -89,30 +93,22 @@ let Pais = {
     gentilicio: "Español/española"
 }
 
-let O_Error = {
-    codigo: "console.log()"
-}
+
 let codError = O_Error.codigo;
 
-let Grupo = {
-    integrantes: ["pepe","maria","lara","juan"]
-}
+
 let integrantes = Grupo.integrantes;
 Grupo.numIntegrantes = 5;
 console.log(Grupo.numIntegrantes)
 
-let Pantalla = {
-    pixeles: [[2,4],[5,8]],
-}
+
 let pixeles = Pantalla.pixeles;
 Pantalla.dimensiones = "1920x1080";
 
-let Movil = {
-    especificaciones: ["especificaciones"],
-}
+
 let especificaciones = Movil.especificaciones;
 Movil.temperatura = "20º";
 
-let Led = {};
+
 Led.encendido = !(true);
 
